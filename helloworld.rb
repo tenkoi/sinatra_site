@@ -13,6 +13,9 @@ get '/goodbye' do
   "Goodbye world"
 end
 
+get '/about' do
+  redirect('/company/about')
+end
 
 
 get '/form' do
