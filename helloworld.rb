@@ -34,5 +34,10 @@ get /\/company\/[A-Za-z\-]+/ do
 end
 
 get '/company/*' do
-  'This routes cathes everything else'
+  subject = params[:splat].first
+  "Splat is: #{subject}"
+end
+
+get '/products/:id' do
+  "Product ID is: #{params[:id]}"
 end
